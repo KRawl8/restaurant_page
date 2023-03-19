@@ -1,3 +1,75 @@
 * {
-    background-color: cornflowerblue;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#content {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template: 2fr 12fr / 4fr 6fr;
+}
+
+/* Header ---------------------------------------------------------- */
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+    box-shadow: 0px -20px 20px 10px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+li {
+    padding: 10px 15%;
+    list-style: none;
+    font-size: 24px;
+}
+
+/* Image ---------------------------------------------------------- */
+
+.food-image {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(./food.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+/* Text ---------------------------------------------------------- */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 100px 100px 100px;
+    font-size: 24px;
+}
+
+.about, .location {
+    /* background-color: darkgrey; */
+    border: 5px solid rgb(192, 192, 192);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.hours {
+    text-align: center;
+}
+
+.times-title {
+    margin-bottom: 20px;
 }

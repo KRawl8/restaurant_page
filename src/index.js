@@ -27,9 +27,10 @@ header.append(mainTitle, navbar);
 let imageDiv = document.createElement("div");
 imageDiv.className = "food-image";
 
-let foodImage = new Image();
-foodImage.src = Food;
-imageDiv.appendChild(foodImage);
+// I set the image in CSS instead
+// let foodImage = new Image();
+// foodImage.src = Food;
+// imageDiv.appendChild(foodImage);
 
 // Main Content ---------------------------------------------------------------
 
@@ -40,11 +41,14 @@ let about = document.createElement("div");
 about.className = "about";
 let aboutPara = document.createElement("p");
 aboutPara.textContent =
-  "Restaurant One has a great atmosphere, as well as amazing customer service and the best food around.";
+  "Restaurant One has the best food around, cooked by our masterful chefs with decades of experiece between them. We are dedicated to amazing customer service and always maintain a blissful atmosphere for our wonderful customers.";
 about.appendChild(aboutPara);
 
 let openingTimes = document.createElement("div");
 openingTimes.className = "hours";
+let timesTitle = document.createElement("h2");
+timesTitle.className = "times-title";
+timesTitle.textContent = "Opening Times:";
 let monday = document.createElement("p");
 monday.textContent = "Monday: 6am - 6pm";
 let tuesday = document.createElement("p");
@@ -60,6 +64,7 @@ saturday.textContent = "Saturday: 8am - 10pm";
 let sunday = document.createElement("p");
 sunday.textContent = "Sunday: 8am - 8pm";
 openingTimes.append(
+  timesTitle,
   monday,
   tuesday,
   wednesday,
