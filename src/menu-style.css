@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#content {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template: 2fr 12fr / 1fr;
+}
+
+/* Header ---------------------------------------------------------- */
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(204, 54, 9);
+    color: white;
+    box-shadow: 0px -20px 20px 10px;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.current-page {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    padding: 10px 15%;
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main ---------------------------------------------------------- */
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 200px;
+}
+
+.food-1, .food-2, .food-3, .food-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 20px 100px 0px 100px;
+}
+
+.food-image-1, .food-image-2, .food-image-3, .food-image-4 {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.food-image-1 {
+    background-image: url(./img/pizza.jpg);
+}
+
+.food-image-2 {
+    background-image: url(./img/pasta.jpg);
+}
+
+.food-image-3 {
+    background-image: url(./img/burger.jpg);
+}
+
+.food-image-4 {
+    background-image: url(./img/chicken-tikka.avif);
+}
+
+p {
+    text-align: center;
+}
