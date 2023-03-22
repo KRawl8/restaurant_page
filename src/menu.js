@@ -1,4 +1,4 @@
-import "./menu-style.css";
+import "./menu.css";
 
 const menuPage = () => {
   let content = document.querySelector("#content");

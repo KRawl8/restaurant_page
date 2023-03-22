@@ -1,5 +1,4 @@
-import "./home-style.css";
-import { menuPage } from "./menu";
+import "./home.css";
 // import Food from "./img/food.avif";
 
 const homePage = () => {
@@ -19,9 +18,6 @@ const homePage = () => {
   nav1.className = "current-page";
   let nav2 = document.createElement("li");
   nav2.textContent = "Menu";
-  //   nav2.addEventListener("click", () => {
-  //     menuPage();
-  //   });
   let nav3 = document.createElement("li");
   nav3.textContent = "Contact";
   navbar.append(nav1, nav2, nav3);
