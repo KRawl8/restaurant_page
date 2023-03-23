@@ -4,26 +4,6 @@ import "./home.css";
 const homePage = () => {
   let content = document.querySelector("#content");
 
-  // Header --------------------------------------------------------------------
-
-  let header = document.createElement("div");
-  header.className = "header";
-
-  let mainTitle = document.createElement("h1");
-  mainTitle.textContent = "Restaurant One";
-
-  let navbar = document.createElement("ul");
-  let nav1 = document.createElement("li");
-  nav1.textContent = "Home";
-  nav1.className = "current-page";
-  let nav2 = document.createElement("li");
-  nav2.textContent = "Menu";
-  let nav3 = document.createElement("li");
-  nav3.textContent = "Contact";
-  navbar.append(nav1, nav2, nav3);
-
-  header.append(mainTitle, navbar);
-
   // Image ----------------------------------------------------------------------
 
   let imageDiv = document.createElement("div");
@@ -86,7 +66,7 @@ const homePage = () => {
 
   // ----------------------------------------------------------------------------
 
-  content.append(header, imageDiv, mainContent);
+  content.append(imageDiv, mainContent);
 };
 
 export { homePage };

@@ -1,6 +1,11 @@
-import "./header.css";
-import { homePage } from "./home";
+import { header, nav1, nav2, nav3 } from "./header";
+// import { homePage } from "./home";
 // import { menuPage } from "./menu";
 
-homePage();
 // menuPage();
+
+header();
+
+header.nav1.addEventListener("click", () => {
+  console.log("hi");
+});
