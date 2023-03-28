@@ -1,12 +1,14 @@
 import { header } from "./header";
 import { homePage } from "./home";
 import { menuPage } from "./menu";
+import { contactPage } from "./contact";
 
 // Create an object with the same properties with the returned values of calling header()
 const { nav1, nav2, nav3 } = header();
 
 nav1.className = "current-page";
 
+// When each nav button is clicked set its style in the header and load the correct page
 [nav1, nav2, nav3].forEach((navButton) => {
   navButton.addEventListener("click", () => {
     [nav1, nav2, nav3].forEach((button) => {

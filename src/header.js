@@ -12,7 +12,6 @@ const header = () => {
   let navbar = document.createElement("ul");
   let nav1 = document.createElement("li");
   nav1.textContent = "Home";
-  //   nav1.className = "current-page";
   let nav2 = document.createElement("li");
   nav2.textContent = "Menu";
   let nav3 = document.createElement("li");

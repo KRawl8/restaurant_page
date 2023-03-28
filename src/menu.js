@@ -8,12 +8,6 @@ const menuPage = () => {
   let mainContent = document.createElement("div");
   mainContent.className = "main-content-2";
 
-  let menuTitle = document.createElement("h2");
-  menuTitle.textContent = "Menu";
-
-  let menuArea = document.createElement("div");
-  menuArea.className = "menu";
-
   let food1 = document.createElement("div");
   food1.className = "food-1";
   let foodImage1 = document.createElement("div");
