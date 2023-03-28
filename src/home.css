@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-#content {
-    height: 100vh;
-    background-color: rgb(250, 250, 250);
-    display: grid;
-    grid-template: 2fr 12fr / 4fr 6fr;
-}
-
 /* Image ---------------------------------------------------------- */
 
 .food-image {
@@ -24,6 +17,7 @@
 /* Text ---------------------------------------------------------- */
 
 .main-content {
+    grid-area: 2 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

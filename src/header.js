@@ -26,8 +26,10 @@ const header = () => {
   return { nav1, nav2, nav3 };
 };
 
-// header.nav1.addEventListener("click", () => {
-//   console.log("hi");
-// });
+const toggleSelectedPage = (pageNav) => {
+  pageNav.className === "current-page"
+    ? (pageNav.className = "not-current-page")
+    : (pageNav.className = "current-page");
+};
 
-export { header, nav1, nav2, nav3 };
+export { header, toggleSelectedPage };

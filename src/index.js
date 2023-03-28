@@ -1,11 +1,19 @@
-import { header, nav1, nav2, nav3 } from "./header";
-// import { homePage } from "./home";
-// import { menuPage } from "./menu";
+import { header, toggleSelectedPage } from "./header";
+import { homePage } from "./home";
+import { menuPage } from "./menu";
 
-// menuPage();
+// Create an object with the same properties with the returned values of calling header()
+const { nav1, nav2, nav3 } = header();
 
-header();
-
-header.nav1.addEventListener("click", () => {
-  console.log("hi");
+[nav1, nav2, nav3].forEach((navButton) => {
+  navButton.addEventListener("click", () => {
+    [nav1, nav2, nav3].forEach((button) => {
+      button.className = "not-current-page";
+    });
+    // toggleSelectedPage(navButton);
+    navButton.className = "current-page";
+  });
 });
+
+// homePage();
+menuPage();

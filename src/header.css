@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+#content {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template: 2fr 12fr / 4fr 6fr;
+}
+
 .header {
     grid-area: 1 / 1 / 2 / 3;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,6 +35,10 @@ ul {
 
 .current-page {
     color: rgb(0, 0, 0);
+}
+
+.not-current-page {
+    color: chartreuse;
 }
 
 li {
