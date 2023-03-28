@@ -38,12 +38,12 @@ ul {
 }
 
 .not-current-page {
-    color: chartreuse;
+    color: rgb(255, 255, 255);
 }
 
 li {
     padding: 10px 15%;
     list-style: none;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
 }
