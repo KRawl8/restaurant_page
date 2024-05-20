@@ -2,9 +2,11 @@
   "name": "restaurant_page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
@@ -19,8 +21,10 @@
   "homepage": "https://github.com/KRawl8/restaurant_page#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.2",
     "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^5.0.4"
   }
 }
